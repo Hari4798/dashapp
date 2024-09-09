@@ -9,6 +9,8 @@ df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/gapmi
 #3 intialize the app 
 app = Dash(__name__)
 
+server = app.server
+
 
 #4 app layout
 app.layout = html.Div([
