@@ -18,9 +18,9 @@ app.layout = html.Div([
 'background-position': 'right top',
 'background-size': '150px 100px' },children= '', id ="title"),
     dcc.Dropdown(options=['pop', 'lifeExp', 'gdpPercap'], value="lifeExp", id='drop-down', placeholder="Select a KPI", style={'width': '50%', 'margin': 'auto', 'display': 'block'}),
-    dcc.Graph( id="histogram", figure={}),
-    dcc.Graph( id="bar", figure={}),
-    dcc.Graph( id="pie", figure={}),
+    dcc.Graph( id="histogram", figure={}, style={'display': 'inline-block'}), # added inline block
+    dcc.Graph( id="bar", figure={}, style={'display': 'inline-block'}), # added inline block
+    dcc.Graph( id="pie", figure={}, style={'display': 'inline-block'}), # added inline block
 
 ])
 
